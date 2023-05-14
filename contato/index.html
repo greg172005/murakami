@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contato/contato.css">
+    <title>Document</title>
+</head>
+<body>
+  
+<div class="caixa">
+    <div class="menu">
+        <img class="logo" src="/img/oonda.png.png">
+        <ul>
+             <a href="/index.html"><li>Inicio</li></a>
+             <li>Suporte</li>
+       </ul>
+     </div>
+
+     <h1 class="titulo">Olá caso tenha um comentario pode deixalo aqui:</h1>
+
+     <button onclick="abrir()" class="cb">Comentar</button>
+</div>
+     <form action="https://formsubmit.co/lmartinselias@gmail.com" method="POST">
+        <input type="text" name="name" required placeholder="Nome">
+
+        <input type="email" name="email" required placeholder="Email">
+        <textarea placeholder="Seu comentario"></textarea>
+        <button type="submit">Enviar</button>
+        <button onclick="fechar()" type="submit" class="voltar">Voltar</button>
+        
+   </form>
+
+</body>
+   <script>
+         function abrir(){
+              document.querySelector("form").style.opacity = 1
+              document.querySelector("div").style.opacity = 0.2
+         }
+
+         function fechar(){
+             document.querySelector("form").style.opacity = 0
+             document.querySelector("div").style.opacity = 1
+
+         }
+
+   </script>
+</html>
